@@ -1,0 +1,27 @@
+<template>
+    <div class="body">
+        <div class="item_container">
+            <img src={product.item_image} alt={product.name} class="item_image"/>
+            <p class="rating">{product.rating.stars}⭐ | {product.rating.noOfReviews}</p>
+            <p class="company_name">{product.company_name}</p>
+            <p class="item_name">{product.item_name}</p>
+            <div class="price">
+              <span class="current_price">Rs {product.current_price}</span>
+              <span class="original_price">Rs {product.original_price}</span>
+              <span class="discount">({product.discount}%OFF)</span>
+            </div>
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" onchange={updateQuantity} />
+        
+            <label>Color</label>
+            <select onchange={updateColor}>
+              <option value="Red">Red</option>
+              <option value="Blue">Blue</option>
+              <option value="Green">Green</option>
+            </select>
+        
+            <button class="btn_add_bag" onclick={addToCart}><svg class="add_bag_icon" viewBox="0 0 32 32" id="i-bag" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 9 L5 29 27 29 27 9 Z M10 9 C10 9 10 3 16 3 22 3 22 9 22 9"></path> </g></svg> Add to Bag</button>
+          </div>
+    </div>
+  </template>
+  

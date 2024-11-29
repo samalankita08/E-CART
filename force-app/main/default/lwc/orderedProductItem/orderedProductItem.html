@@ -1,0 +1,27 @@
+<template>
+  <div class="item_container_bag">
+    <div class="item_left_part">
+      <img class="bag_item_img" src={item.item_image} alt="item image">
+    </div>
+    <div class="item_right_part">
+      <div class="company">{item.company_name}</div>
+      <div class="item_name_bag">{item.item_name}</div>
+      <div class="price_container">
+        <span class="current_price">{item.current_price}</span>
+        <span class="original_price">{item.original_price}</span>
+        <span class="discount_percentage">({item.discount}% OFF)</span>
+      </div>
+      <div class="return_period">
+        <span class="return_period_days">{item.return_period} days</span> return available
+      </div>
+      <div class="delivery_details">Delivery by
+        <span class="delivery-details_days">{item.delivery_date}</span>
+      </div>
+      <div class="total">
+        <span class="total_price"><strong>Total:  {totalPrice}Rs</strong></span>
+      </div>
+    </div>
+
+    <button class="remove_from_cart">Cancel item</button>
+  </div>
+</template>

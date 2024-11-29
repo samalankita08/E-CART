@@ -1,0 +1,169 @@
+<template>
+  <div class="body">
+    <header>
+      <div class="logo_container">
+        <a href="#"><img class="myntra_home" src="https://cdn.worldvectorlogo.com/logos/myntra-2.svg" alt="myntra"></a>
+      </div>
+      <nav class="nav_bar">
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Home & Living</a>
+        <a href="#">Beauty</a>
+        <a href="#">Studio <sup>new</sup></a>
+      </nav>
+      <div class="search_bar">
+        <span class="search_icon"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0,0,256,256">
+          <g fill="#6f737c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M13,3c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c2.39651,0 4.59738,-0.85101 6.32227,-2.26367l5.9707,5.9707c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-5.9707,-5.9707c1.41266,-1.72488 2.26367,-3.92576 2.26367,-6.32227c0,-5.511 -4.489,-10 -10,-10zM13,5c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8z"></path></g></g>
+          </svg></span>
+        <input class="search_input" placeholder="Search for products, brands and more">
+      </div>
+      <div class="action_bar">
+        <div class="action_container">
+          <span class="material-symbols-outlined action_icon"><svg width="25px" height="25px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#000000" class="bi bi-person">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+          </svg></span>
+          <span class="action_name">Profile</span>
+        </div>
+        <div class="action_container">
+          <span class="action_icon"><svg fill="#000000" height="25px" width="25px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+            viewBox="0 0 455 455" xml:space="preserve">
+         <path d="M326.632,10.346c-38.733,0-74.991,17.537-99.132,46.92c-24.141-29.384-60.398-46.92-99.132-46.92
+           C57.586,10.346,0,67.931,0,138.714c0,55.426,33.05,119.535,98.23,190.546c50.161,54.647,104.728,96.959,120.257,108.626l9.01,6.769
+           l9.01-6.768c15.529-11.667,70.098-53.978,120.26-108.625C421.949,258.251,455,194.141,455,138.714
+           C455,67.931,397.414,10.346,326.632,10.346z M334.666,308.974c-41.259,44.948-85.648,81.283-107.169,98.029
+           c-21.52-16.746-65.907-53.082-107.166-98.03C61.236,244.592,30,185.717,30,138.714c0-54.24,44.128-98.368,98.368-98.368
+           c35.694,0,68.652,19.454,86.013,50.771l13.119,23.666l13.119-23.666c17.36-31.316,50.318-50.771,86.013-50.771
+           c54.24,0,98.368,44.127,98.368,98.368C425,185.719,393.763,244.594,334.666,308.974z"/>
+         </svg></span>
+          <span class="action_name">Wishlist</span>
+        </div>
+        <a class="action_container" onclick={toggleCartItems}>
+          <span class="action_icon"><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5285 6C16.5098 5.9193 16.4904 5.83842 16.4701 5.75746C16.2061 4.70138 15.7904 3.55383 15.1125 2.65C14.4135 1.71802 13.3929 1 12 1C10.6071 1 9.58648 1.71802 8.88749 2.65C8.20962 3.55383 7.79387 4.70138 7.52985 5.75747C7.50961 5.83842 7.49016 5.9193 7.47145 6H5.8711C4.29171 6 2.98281 7.22455 2.87775 8.80044L2.14441 19.8004C2.02898 21.532 3.40238 23 5.13777 23H18.8622C20.5976 23 21.971 21.532 21.8556 19.8004L21.1222 8.80044C21.0172 7.22455 19.7083 6 18.1289 6H16.5285ZM8 11C8.57298 11 8.99806 10.5684 9.00001 9.99817C9.00016 9.97438 9.00044 9.9506 9.00084 9.92682C9.00172 9.87413 9.00351 9.79455 9.00718 9.69194C9.01451 9.48652 9.0293 9.18999 9.05905 8.83304C9.08015 8.57976 9.10858 8.29862 9.14674 8H14.8533C14.8914 8.29862 14.9198 8.57976 14.941 8.83305C14.9707 9.18999 14.9855 9.48652 14.9928 9.69194C14.9965 9.79455 14.9983 9.87413 14.9992 9.92682C14.9996 9.95134 14.9999 9.97587 15 10.0004C15 10.0004 15 11 16 11C17 11 17 9.99866 17 9.99866C16.9999 9.9636 16.9995 9.92854 16.9989 9.89349C16.9978 9.829 16.9957 9.7367 16.9915 9.62056C16.9833 9.38848 16.9668 9.06001 16.934 8.66695C16.917 8.46202 16.8953 8.23812 16.8679 8H18.1289C18.6554 8 19.0917 8.40818 19.1267 8.93348L19.86 19.9335C19.8985 20.5107 19.4407 21 18.8622 21H5.13777C4.55931 21 4.10151 20.5107 4.13998 19.9335L4.87332 8.93348C4.90834 8.40818 5.34464 8 5.8711 8H7.13208C7.10465 8.23812 7.08303 8.46202 7.06595 8.66696C7.0332 9.06001 7.01674 9.38848 7.00845 9.62056C7.0043 9.7367 7.00219 9.829 7.00112 9.89349C7.00054 9.92785 7.00011 9.96221 7 9.99658C6.99924 10.5672 7.42833 11 8 11ZM9.53352 6H14.4665C14.2353 5.15322 13.921 4.39466 13.5125 3.85C13.0865 3.28198 12.6071 3 12 3C11.3929 3 10.9135 3.28198 10.4875 3.85C10.079 4.39466 9.76472 5.15322 9.53352 6Z" fill="#0F0F0F"/>
+            </svg></span>
+          <span class="action_name" >Bag</span>
+          <span class="bag_item_count">{totalCartItems}</span>
+        </a>
+      </div>
+    </header>
+    
+    <template if:false={showCartItems}>
+    <div class="items_container">
+      
+        <template for:each={products} for:item="product">
+          <c-product-item
+            key={product.id}
+            product={product}
+            onaddtocart={handleAddToCart}
+          ></c-product-item>
+        </template>
+      </div>
+  </template>
+
+    <!-- Display Cart Items only when showCartItems is true -->
+    <template if:true={showCartItems}>
+      <template if:true={cartSize}>
+      
+      <div class="bag_page">
+      <div class="items_container_bag">
+      <div class="cart">
+        <template for:each={cartItems} for:item="item">
+          <c-cart-item key={item.id} item={item} onremovefromcart={handleRemoveFromCart}></c-cart-item>
+        </template>
+        
+      </div>
+    </div>
+      <div class="bag_summary">
+        <div class="bag_details_container">
+          <div class="price_header">PRICE DETAILS ({totalItems} Items) </div>
+          <div class="price_item">
+            <span class="price_item_tag">Total MRP</span>
+            <span class="price_item_value">Rs {totalMRP}</span>
+          </div>
+          <div class="price_item">
+            <span class="price-item-tag">Discount on MRP</span>
+            <span class="price_item_value priceDetail_base_discount">-Rs {totalDiscount}</span>
+          </div>
+          <div class="price_item">
+            <span class="price_item_tag">Convenience Fee (only for order below Rs 500)</span>
+            <span class="price_item_value priceDetail_convenience">Rs 99</span>
+          </div>
+          <hr>
+          <div class="price_footer">
+            <span class="price_item_tag">Total Amount</span>
+            <span class="price_item_value">Rs {finalPayment}</span>
+          </div>
+        </div>
+        <button class="btn_place_order" onclick={placeOrder} disabled={isPlaceOrderDisabled}>
+          <div class="css_xjhrni">Place Order</div>
+        </button>
+      </div>
+    </div>
+    
+    </template>
+    </template>
+    
+    <!-- Display Ordered Products only if there are ordered items -->
+    <template if:true={orderSize}>
+      <h2>ORDERS</h2>
+      <div class="ordered-products">
+        <template for:each={orderedItems} for:item="item">
+          <c-ordered-product-item key={item.id} item={item}></c-ordered-product-item>
+        </template>
+      </div>
+    </template>
+
+    <footer>
+      <div class="footer_container">
+        <div class="footer_column">
+          <h3>Online Shopping</h3>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Kids</a>
+          <a href="#">Home & Living</a>
+          <a href="#">Beauty</a>
+          <a href="#">Gift Card</a>
+          <a href="#">Myntra Insider</a>
+        </div>
+        <div class="footer_column">
+          <h3>Customer Policies</h3>
+          <a href="#">Contact Us</a>
+          <a href="#">FAQ</a>
+          <a href="#">T&C</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Track Orders</a>
+          <a href="#">Shipping</a>
+          <a href="#">Cancellation</a>
+          <a href="#">Returns</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Grievance Officer</a>
+        </div>
+        <div class="footer_column">
+          <h3>Useful Links</h3>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Site Map</a>
+          <a href="#">Corporate Information</a>
+          <a href="#">Whitehat</a>
+          <a href="#">Cleartrip</a>
+        </div>
+        <div class="footer_column">
+          <h3>Registered Office Address</h3>
+          <p>Buildings Alyssa,<br>
+            Begonia and Clover situated in Embassy Tech Village,<br>
+            Outer Ring Road,<br>
+            Devarabeesanahalli Village,<br>
+            Varthur Hobli,<br>
+            Bengaluru – 560103, India</p>
+        </div>
+      </div>
+      
+      <hr>
+  
+      <div class="copyright">
+        © 2024 www.myntra.com. All rights reserved.
+      </div>
+    </footer>
+  </div>
+</template>

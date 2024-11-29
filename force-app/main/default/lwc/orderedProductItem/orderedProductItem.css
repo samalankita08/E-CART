@@ -1,0 +1,88 @@
+.item_container_bag{
+  width: 60%;
+  margin-bottom: 8px;
+  background: white;
+  font-size: 14px;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  position: relative;
+  padding: 12px 12px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item_left_part{
+  position: absolute;
+  background: rgb(255, 242, 223);
+  height: 148px;
+  width: 111px;
+}
+.item_right_part{
+  padding-left: 12px;
+  position: relative;
+  min-height: 148px;
+  margin-left: 111px;
+  margin-bottom: 12px;
+}
+.bag_item_img{
+  width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+}
+.current_price{
+  font-size: 14px;
+  font-weight: 700;
+  color: #282c3f;
+}
+.original_price{
+  text-decoration: line-through;
+  color: #7e818c;
+  font-weight: 400;
+  margin-left: 5px;
+  font-size: 12px;
+}
+.return_period{
+  display: inline-flex;
+  font-size: 14px;
+  padding-top: 8px;
+}
+.return_period_days{
+  font-weight: 700;
+  margin-right: 4px;
+}
+.delivery-details_days{
+  color: #03a685;
+}
+.delivery_details{
+  margin-top: 5px;
+  color: #282c3f;
+  font-size: 12px;
+  letter-spacing: -.1px;
+  margin-bottom: 8px;
+  line-height: 15px;
+}
+.total{
+  width: 100px;
+  height: 18px;
+  /* background-color: rgb(144, 216, 29); */
+}
+.total_price{
+  font-size: 14px;
+  font-weight: 700;
+  color: #FF3F6C;
+}
+.remove_from_cart{
+  position: absolute;
+  font-size: 16px;
+  top: 10px;
+  right: 18px;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  background-color: #ff3f6c;
+}

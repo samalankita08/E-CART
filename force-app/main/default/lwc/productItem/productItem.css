@@ -1,0 +1,135 @@
+  /* Global body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item_container{
+    width: 260px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .item_image{
+    width: 100%;
+    max-height: 330px;
+    min-height: 330px;
+  }
+  .rating{
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .company_name{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .item_name{
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    display: block;
+  }
+  .price{
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 15px;
+    color: #282c3f;
+    white-space: nowrap;
+  }
+  .current_price{
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+  }
+  .original_price{
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+  .discount{
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  /* Label styling */
+  .item_container label {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+    margin: 10px 0 5px;
+  }
+
+  /* Input styling */
+  .item_container input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 1em;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+  .item_container input[type="number"]:focus {
+    border-color: #007bff;
+  }
+
+  /* Dropdown styling */
+  .item_container select {
+    width: 100%;
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+  .item_container select:focus {
+    border-color: #007bff;
+  }
+
+  .btn_add_bag{
+    margin-top: 10px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #ff3e6c;
+    padding: 15px 0;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .add_bag_icon{
+    margin-right: 12px;
+  }
